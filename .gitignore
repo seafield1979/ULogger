@@ -1,0 +1,9 @@
+*.obj
+*.tlog
+ULogger/Debug/vc141.pdb
+ULogger/Debug/vc141.idb
+Debug/ULogger.pdb
+.vs/ULogger/v15/ipch/ded7039a0fbe2b3e.ipch
+.vs/ULogger/v15/ipch/b1d1374a16336e37.ipch
+.vs/ULogger/v15/Browse.VC.opendb
+.vs/ULogger/v15/Browse.VC.db
