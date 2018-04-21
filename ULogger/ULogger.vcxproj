@@ -30,7 +30,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -146,17 +146,44 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CFileWriter.h" />
+    <ClInclude Include="CIconImage.h" />
+    <ClInclude Include="CIconImages.h" />
+    <ClInclude Include="CLane.h" />
+    <ClInclude Include="CLanes.h" />
+    <ClInclude Include="CLog.h" />
+    <ClInclude Include="CLogArea.h" />
+    <ClInclude Include="CLogBlock.h" />
+    <ClInclude Include="CLogData.h" />
+    <ClInclude Include="CLogDetail.h" />
+    <ClInclude Include="CLogger.h" />
+    <ClInclude Include="CLogID.h" />
+    <ClInclude Include="CLogIDs.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="UTypedef.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CFileWriter.cpp" />
+    <ClCompile Include="CIconImage.cpp" />
+    <ClCompile Include="CIconImages.cpp" />
+    <ClCompile Include="CLane.cpp" />
+    <ClCompile Include="CLanes.cpp" />
+    <ClCompile Include="CLog.cpp" />
+    <ClCompile Include="CLogArea.cpp" />
+    <ClCompile Include="CLogBlock.cpp" />
+    <ClCompile Include="CLogData.cpp" />
+    <ClCompile Include="CLogDetail.cpp" />
+    <ClCompile Include="CLogger.cpp" />
+    <ClCompile Include="CLogID.cpp" />
+    <ClCompile Include="CLogIDs.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="ULogger.cpp" />
+    <ClCompile Include="ULoggerApp.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

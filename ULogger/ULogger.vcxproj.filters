@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Logger">
+      <UniqueIdentifier>{343682cc-52a5-45cb-8c4e-b1f3de99e185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Logger">
+      <UniqueIdentifier>{64f6beb4-f29c-42e6-9181-60eff972264b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,13 +30,94 @@
     <ClInclude Include="targetver.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="CLogger.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLog.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogData.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CFileWriter.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CIconImage.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CIconImages.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLane.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLanes.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogArea.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogBlock.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogDetail.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogID.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogIDs.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="UTypedef.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="ULogger.cpp">
+    <ClCompile Include="ULoggerApp.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogger.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLog.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogData.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogArea.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogBlock.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogDetail.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CFileWriter.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CIconImage.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CIconImages.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLane.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLanes.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogID.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogIDs.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

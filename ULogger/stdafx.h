@@ -9,7 +9,8 @@
 
 #include <stdio.h>
 #include <tchar.h>
-
+#include <string>
+#include "UTypedef.h"
 
 
 // TODO: プログラムに必要な追加ヘッダーをここで参照してください
