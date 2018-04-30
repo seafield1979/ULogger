@@ -72,6 +72,9 @@
     <ClInclude Include="UTypedef.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="CLogDetailTest1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -118,6 +121,9 @@
     </ClCompile>
     <ClCompile Include="CLogIDs.cpp">
       <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogDetailTest1.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

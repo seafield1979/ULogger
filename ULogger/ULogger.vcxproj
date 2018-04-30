@@ -156,6 +156,7 @@
     <ClInclude Include="CLogBlock.h" />
     <ClInclude Include="CLogData.h" />
     <ClInclude Include="CLogDetail.h" />
+    <ClInclude Include="CLogDetailTest1.h" />
     <ClInclude Include="CLogger.h" />
     <ClInclude Include="CLogID.h" />
     <ClInclude Include="CLogIDs.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="CLogBlock.cpp" />
     <ClCompile Include="CLogData.cpp" />
     <ClCompile Include="CLogDetail.cpp" />
+    <ClCompile Include="CLogDetailTest1.cpp" />
     <ClCompile Include="CLogger.cpp" />
     <ClCompile Include="CLogID.cpp" />
     <ClCompile Include="CLogIDs.cpp" />
