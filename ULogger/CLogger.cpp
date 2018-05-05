@@ -129,8 +129,8 @@ void CLogger::DebugPrint()
 
 			if (ppBlock != NULL) {
 				for (int k = 0; k < LOG_BLOCK_SIZE; k++) {
-					if (ppBlock[j] != NULL) {
-						printf_s("[%d][%d][%d] %s\n", i, j, k, ppBlock[j]->toString());
+					if (ppBlock[k] != NULL) {
+						printf_s("[%d][%d][%d] %s\n", i, j, k, ppBlock[k]->toString());
 					}
 				}
 			}
@@ -141,12 +141,36 @@ void CLogger::DebugPrint()
 //
 // ログを追加する
 // @input logId:
-// @input logName:
 // @input logType:
 // @input laneId:
-// @input logStr:
+// @input pText
+// @input pDetail
 //
 bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pText)
+{
+	return AddLog(logId, logType, laneId, pText, NULL);
+}
+
+bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pText)
+{
+	string text("");
+	if (pText != NULL) {
+		text = std::string(pText);
+	}
+	return AddLog(logId, logType, laneId, &text, NULL);
+}
+
+bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pText, CLogDetail *pDetail)
+{
+	string text("");
+	if (pText != NULL) {
+		text = std::string(pText);
+	}
+	return AddLog(logId, logType, laneId, &text, pDetail);
+}
+
+
+bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pText, CLogDetail *pDetail)
 {
 	// ログを追加先のバッファを探す
 	if (pBlocks[currentBuffer][currentBlock] != NULL) {
@@ -167,22 +191,12 @@ bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pText)
 		}
 
 		// ログを追加
-		CLogData *pData = new CLogData(GetTime(), logId, laneId, logType, pText, NULL);
-			
+		CLogData *pData = new CLogData(GetTime(), logId, laneId, logType, pText, pDetail);
+
 		CLog **ppLog = pBlocks[currentBuffer][currentBlock];
 		ppLog[currentPos] = pData;
 
 		currentPos++;
-	}
-	return true;
-}
-
-
-bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pText, CLogDetail *pDetail)
-{
-	if (pBlocks[currentBuffer][currentBlock] != NULL) {
-
-		CLogData *pData = new CLogData(GetTime(), logId, laneId, logType, pText, pDetail);
 	}
 	return true;
 }

@@ -53,6 +53,9 @@ public:
 	bool AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pTitle);
 	bool AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pTitle, CLogDetail *logDetail);
 
+	bool AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pTitle);
+	bool AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pTitle, CLogDetail *logDetail);
+
 
 
 	// for Debug

@@ -4,9 +4,13 @@
 
 CLogDetail::CLogDetail()
 {
+	pStrBuf = NULL;
 }
 
 
 CLogDetail::~CLogDetail()
 {
+	if (pStrBuf != NULL) {
+
+	}
 }

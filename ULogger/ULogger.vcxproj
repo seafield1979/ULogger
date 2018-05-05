@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -160,6 +160,7 @@
     <ClInclude Include="CLogger.h" />
     <ClInclude Include="CLogID.h" />
     <ClInclude Include="CLogIDs.h" />
+    <ClInclude Include="CLogDetailTest2.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="UTypedef.h" />
@@ -179,6 +180,7 @@
     <ClCompile Include="CLogger.cpp" />
     <ClCompile Include="CLogID.cpp" />
     <ClCompile Include="CLogIDs.cpp" />
+    <ClCompile Include="CLogDetailTest2.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

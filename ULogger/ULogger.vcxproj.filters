@@ -73,7 +73,10 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="CLogDetailTest1.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogDetailTest2.h">
+      <Filter>ヘッダー ファイル\Logger</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -123,7 +126,10 @@
       <Filter>ソース ファイル\Logger</Filter>
     </ClCompile>
     <ClCompile Include="CLogDetailTest1.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogDetailTest2.cpp">
+      <Filter>ソース ファイル\Logger</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
