@@ -11,6 +11,6 @@ CLogDetail::CLogDetail()
 CLogDetail::~CLogDetail()
 {
 	if (pStrBuf != NULL) {
-
+		delete pStrBuf;
 	}
 }

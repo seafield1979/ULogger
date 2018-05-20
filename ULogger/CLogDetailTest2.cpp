@@ -4,11 +4,15 @@
 
 CLogDetailTest2::CLogDetailTest2()
 {
+	
 }
 
 
 CLogDetailTest2::~CLogDetailTest2()
 {
+	if (pStrBuf != NULL) {
+		delete pStrBuf;
+	}
 }
 
 // オブジェクトコピー時にコンストラクタで初期化を行うと値の設定が重複するため、Initで初期化処理を行う
@@ -30,21 +34,19 @@ CLogDetail* CLogDetailTest2::CreateCopy()
 	return pCopy;
 }
 
-char* CLogDetailTest2::toString()
+string* CLogDetailTest2::toString()
 {
-	static char buf[256];
-	char buf2[256] = "\0";
-
-	buf[0] = '\0';
-
+	pStrBuf = new string();
+	char buf[256];
+	
 	for (int i = 0; i < ARRAY1_SIZE; i++) {
 		if (i > 0) {
-			strcat_s(buf, ",");
+			pStrBuf->append(",");
 		}
-		sprintf_s(buf2, "[%d]:%d", i, array1[i]);
-		strcat_s(buf, buf2);
+		sprintf_s(buf, "[%d]:%d", i, array1[i]);
+		pStrBuf->append(buf);
 	}
-	return buf;
+	return pStrBuf;
 }
 
 char* CLogDetailTest2::dataTypeString()

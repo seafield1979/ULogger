@@ -9,9 +9,9 @@ public:
 
 	CLogDetail* CreateCopy();
 
-	virtual char* toString();
-	virtual char* dataTypeString();
-	virtual byte* toBinary();
+	string* toString();
+	char* dataTypeString();
+	byte* toBinary();
 
 	void setDetailText(string *pText) {
 		pDetailText = pText;

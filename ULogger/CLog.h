@@ -24,7 +24,7 @@ class CLog
 {
 public:
 	CLog();
-	~CLog();
+	virtual ~CLog();
 
 	// Properties
 	

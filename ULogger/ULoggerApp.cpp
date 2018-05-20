@@ -11,7 +11,7 @@ int main(int argc, char* args[])
 	printf_s("hello world\n");
 
 	// Loggerを作成
-	CLogger logger = CLogger();
+	CLogger logger;// = CLogger();
 
 	// ログを追加
 	logger.AddLog(1, E_LOG_SINGLE, 1, &(std::string("test1")));

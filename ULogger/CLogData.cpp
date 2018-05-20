@@ -34,6 +34,7 @@ CLogData::~CLogData()
 	}
 }
 
+
 char* CLogData::toString()
 {
 	static char buf[256];
@@ -59,7 +60,7 @@ char* CLogData::toString()
 		sprintf_s(buf2, ",%s", pDetail->dataTypeString());
 		strcat_s(buf, buf2);
 
-		sprintf_s(buf2, ",{%s}", pDetail->toString());
+		sprintf_s(buf2, ",{%s}", pDetail->toString()->c_str());
 		strcat_s(buf, buf2);
 	}
 

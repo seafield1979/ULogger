@@ -81,9 +81,8 @@ void CLogger::ClearBuffer(int bufNo)
 
 		if (ppBlock != NULL) {
 			for (int j = 0; j < LOG_BLOCK_SIZE; j++) {
-				CLog *pLog = ppBlock[j];
-				if (pLog != NULL) {
-					delete pLog;
+				if (ppBlock[j] != NULL) {
+					delete ppBlock[j];
 					ppBlock[j] = NULL;
 				}
 			}
@@ -146,27 +145,27 @@ void CLogger::DebugPrint()
 // @input pText
 // @input pDetail
 //
-bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pText)
+bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, string *pTitle)
 {
-	return AddLog(logId, logType, laneId, pText, NULL);
+	return AddLog(logId, logType, laneId, pTitle, NULL);
 }
 
-bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pText)
+bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pTitle)
 {
-	string text("");
-	if (pText != NULL) {
-		text = std::string(pText);
+	string title("");
+	if (pTitle != NULL) {
+		title = std::string(pTitle);
 	}
-	return AddLog(logId, logType, laneId, &text, NULL);
+	return AddLog(logId, logType, laneId, &title, NULL);
 }
 
-bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pText, CLogDetail *pDetail)
+bool CLogger::AddLog(int logId, E_LOG_TYPE logType, int laneId, char *pTitle, CLogDetail *pDetail)
 {
-	string text("");
-	if (pText != NULL) {
-		text = std::string(pText);
+	string title("");
+	if (pTitle != NULL) {
+		title = std::string(pTitle);
 	}
-	return AddLog(logId, logType, laneId, &text, pDetail);
+	return AddLog(logId, logType, laneId, &title, pDetail);
 }
 
 

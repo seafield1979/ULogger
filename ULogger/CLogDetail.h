@@ -15,8 +15,7 @@ public:
 	virtual char* dataTypeString() { return NULL; }
 	virtual byte* toBinary() { return NULL; }
 
-private:
-	string str;
+protected:
 	string *pStrBuf;
 };
 

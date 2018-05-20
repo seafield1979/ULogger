@@ -13,9 +13,9 @@ public:
 
 	CLogDetail* CreateCopy();
 
-	virtual char* toString();
-	virtual char* dataTypeString();
-	virtual byte* toBinary();
+	string* toString();
+	char* dataTypeString();
+	byte* toBinary();
 
 private:
 	int array1[ARRAY1_SIZE];

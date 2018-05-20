@@ -9,6 +9,9 @@ CLogDetailTest1::CLogDetailTest1()
 
 CLogDetailTest1::~CLogDetailTest1()
 {
+	if (pDetailText != NULL) {
+		delete pDetailText;
+	}
 }
 
 // Create object copy
@@ -21,15 +24,14 @@ CLogDetail* CLogDetailTest1::CreateCopy()
 	return pCopy;
 }
 
-string CLogDetailTest1::toString() {
+string* CLogDetailTest1::toString() {
 
 	if (pDetailText != NULL) {
-		sprintf_s(buf, "\"%s\"", pDetailText->c_str());
+		pDetailText->insert(0, "\"");
+		pDetailText->append("\"");
 	}
-	else {
-		buf[0] = '\0';
-	}
-	return buf;
+	
+	return pDetailText;
 }
 
 char* CLogDetailTest1::dataTypeString() {
